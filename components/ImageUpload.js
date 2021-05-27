@@ -11,7 +11,7 @@ export default function ImageUpload({evtId, imageUploaded, token}) {
 
     const [isImageUploading, setIsImageUploading] = useState(false)
     
-    const handleSubmit = async e => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         setIsImageUploading(true)
         const formData = new FormData()
